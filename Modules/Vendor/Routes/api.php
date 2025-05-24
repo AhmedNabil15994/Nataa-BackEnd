@@ -1,0 +1,25 @@
+<?php
+
+
+Route::group(['prefix' => 'vendors'], function () {
+
+    // Route::get('delivery-charge', 'WebService\VendorController@deliveryCharge');
+    Route::get('sections', 'WebService\VendorController@sections');
+    Route::get('categories', 'WebService\VendorController@categories')->name('api.vendors.categories');
+    Route::get('/', 'WebService\VendorController@vendors');
+    Route::get('/{id}', 'WebService\VendorController@getVendorById')->name('api.vendors.get_one_vendor');
+    Route::get('offers/{id}', 'WebService\VendorController@getOfferProductsByVendor')->name('api.vendors.get_vendor_offers');
+
+    /*Route::post('{vendor}/prescription', 'WebService\VendorController@sendPrescription');
+    Route::post('{vendor}/ask-us', 'WebService\VendorController@sendAsk');*/
+
+
+    Route::group(['prefix' => '/', 'middleware' => 'auth:api'], function () {
+        Route::post('rate', 'WebService\VendorController@vendorRate')->name('api.vendors.rate');
+    });
+
+    /*Route::group(['prefix' => 'delivery-companies'], function () {
+        Route::get('{id}', 'WebService\VendorController@getVendorDeliveryCompanies');
+    });*/
+
+});
