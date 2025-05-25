@@ -1,5 +1,5 @@
 ## About Nataa Project
-
+ 
 Nataa is a platform that allows users to explore and order online from a wide range of restaurants and cafes in Kuwait area to offer sweets and coffee for delivery with credit card or cash payment. The Nataa platform also finds the restaurants closest to you for quick delivery in order to maximize the deliciousness of your favorite coffee or dessert.
 
 Nataa is a platform that allows users to explore and to order online from a big selection of restaurants and cafes in Kuwait region to provide Sweets & Coffee for delivery paying with credit card or cash. Nataa platform also finds the nearest restaurants to you for fast
